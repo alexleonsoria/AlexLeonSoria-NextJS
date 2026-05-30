@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@source "../**/*.{ts,tsx}";
+
+@theme {
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-navy: #003358;
+  --color-lime: #C0DF16;
+  --color-cyanblue: #00B4D8;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 120%;
+}
+
+/* Subtle dot pattern for hero background */
+.bg-dot-pattern {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Cache bust to force clean compilation after .gitignore update */
